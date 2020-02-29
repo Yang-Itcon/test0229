@@ -14,7 +14,9 @@ public class EsApp {
         //测试修改
         //yxt修改
 
+        //同时修改
         //yxt同时修改
+
         ConfigurableApplicationContext run = SpringApplication.run(EsApp.class, args);
         CourseService bean = run.getBean(CourseService.class);
         List<Course> curseByPage = bean.findCurseByPage(1, 2, "spring", null, null, null);
