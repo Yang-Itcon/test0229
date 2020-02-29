@@ -11,7 +11,7 @@ import java.util.List;
 @SpringBootApplication
 public class EsApp {
     public static void main(String[] args) throws Exception {
-
+        //测试修改
         ConfigurableApplicationContext run = SpringApplication.run(EsApp.class, args);
         CourseService bean = run.getBean(CourseService.class);
         List<Course> curseByPage = bean.findCurseByPage(1, 2, "spring", null, null, null);
